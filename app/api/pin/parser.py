@@ -1,5 +1,4 @@
 from flask_restful import reqparse
-from flask import url_for
 
 # Parser object
 pin_parser = reqparse.RequestParser()
