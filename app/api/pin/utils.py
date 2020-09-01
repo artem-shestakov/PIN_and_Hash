@@ -6,8 +6,12 @@ Faker.seed(0)
 faker = Faker()
 
 
-# Generate PIN code, salt and SHA-1 hash pin+salt
-def hash_generator(pin_len, salt_len):
+def hash_generator(pin_len=6, salt_len=10):
+    """
+    Generate PIN code, salt and SHA-1 hash pin+salt
+    :param pin_len Length of PIN code. Default=6
+    :param salt_len Lenght of salt. Default=10
+    """
     # Create PIN code
     pin = ""
     for num in range(pin_len):
