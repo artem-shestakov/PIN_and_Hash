@@ -14,7 +14,9 @@ def get_pin():
     salt_len = request.args.get('salt_len')
     strong = request.args.get('strong')
     print(type(strong))
-    if isinstance(strong, str):
+    if strong and len(strong) > 0:
+        return 'Don\'t give any value to strong', 400
+    elif isinstance(strong, str):
         strong = True
         print('true')
     else:
