@@ -2,7 +2,6 @@ aniso8601==8.0.0
 click==7.1.2
 Faker==4.1.1
 Flask==1.1.2
-Flask-RESTful==0.3.8
 gevent==20.6.2
 greenlet==0.4.16
 itsdangerous==1.1.0
